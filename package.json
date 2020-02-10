@@ -1,0 +1,23 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Brown CS1320 Assignment2 Stencil Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "BrownCS1320",
+    "Assignment2",
+    "TwitterFeed"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
