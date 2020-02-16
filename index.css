@@ -1,0 +1,344 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #69757e;
+}
+
+nav ul li {
+  font-size: min(max(12px, 2vw), 18px);
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 46px;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1190px;
+  height: 46px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.tweetButton {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #4AB3F4;
+  border-radius: 16px;
+  height: 40px;
+  width: auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: min(max(12px, 2vw), 18px);
+}
+
+.content {
+  display: flex;
+  max-width: 1190px;
+  min-width: 800px;
+  margin: 56px auto;
+  position: relative;
+}
+
+.info {
+  width: 290px;
+  min-width: 290px;
+  position: relative;
+}
+
+.profileImage {
+  height: 90px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage img {
+  height: 100%;
+}
+
+.nameSection {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.stats {
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  margin-top: 130px;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats li {
+  margin-top: 20px;
+}
+.nameSection img {
+  position: relative;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 80%;
+  background-color: white;
+  margin-left: 20px;
+  z-index: 100;
+}
+
+.username {
+  display: block;
+  width: 100%;
+  margin-top: -50px;
+  padding-top: 5px;
+  background-color: white;
+  height: 90px;
+}
+
+.profileline1 {
+  margin-left: 90px;
+  height: 20px;
+  /*text-align: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.profileline2 {
+  margin-left: 90px;
+  height: 20px;
+  /*text-align: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: dimgrey;
+}
+
+.line1 {
+  margin-left: 5px;
+  height: 20px;
+  /*text-align: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line2 {
+  margin-left: 5px;
+  height: 20px;
+  /*text-align: center;*/
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: dimgrey;
+}
+
+.statsName {
+  font-weight: bold;
+}
+
+.statsCount {
+  color: #4AB3F4;
+}
+
+.follow {
+  width: 250px;
+  min-width: 290px;
+  background-color: white;
+  padding: 20px;
+  height: fit-content;
+  display: block;
+}
+
+@media screen and (max-width: 1190px) {
+  .follow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .info {
+    display: none;
+  }
+}
+
+.whoToFollow {
+  font-weight: bold;
+  font-size: large;
+}
+
+.account {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: flex;
+}
+
+.account img {
+  position: relative;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 60px;
+  background-color: white;
+  z-index: 100;
+}
+
+.texts {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: small;
+}
+
+.accountDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.followButton {
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #4AB3F4;
+  height: 20px;
+  width: 60px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: #4AB3F4;
+  font-weight: bold;
+  font-size: smaller;
+  margin-left: 10px;
+}
+
+hr {
+  border: 1px solid lightgray;
+}
+
+.tweets{
+  flex: 1;
+  max-width: 530px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  height: fit-content;
+}
+
+.tweet:focus {
+  outline: 3px solid deepskyblue;
+}
+
+.tweet {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.tweet img {
+  height: 60px;
+  width: 60px;
+}
+
+.tweetRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.tweetContent {
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+.search {
+  height: 30px;
+  width: 150px;
+  font-size: min(max(12px, 2vw), 18px);
+  border-radius: 10px;
+  border-width: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.search:focus {
+  outline: 3px solid gray;
+}
+
+a.skip-main {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+a.skip-main:focus {
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 0 35%;
+  padding: 5px;
+  font-size: 20px;
+  outline: 3px solid red;
+  text-align: center;
+  z-index: 999;
+}

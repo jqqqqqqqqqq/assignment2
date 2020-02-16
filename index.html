@@ -1,15 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Assignment2</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-	</head>
-	<body>
-		<!-- Your Assignment2 HTML Structure Here  -->
-		
-		<!-- load script after body elements, feel free to play around with this -->
-		<script type="text/javascript" src="index.js"></script>
-	</body>
+  <head>
+    <title>Twitter</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+  <a href="#content" class="skip-main">Jump to content</a>
+    <div class="banner" role="banner">
+      <div class="bannerContainer" role="navigation">
+        <nav>
+          <ul>
+            <li tabindex="0">Home</li>
+            <li tabindex="0">Moments</li>
+            <li tabindex="0">Notifications</li>
+            <li tabindex="0">Messages</li>
+          </ul>
+        </nav>
+        <img class="logo" src="images/twitter-logo.png" alt="twitter-logo">
+        <input id="search" class="search" placeholder="search tweets" aria-label="search">
+        <div class="tweetButton" id="state" tabindex="0">Pause</div>
+      </div>
+    </div>
+    <div class="content" id="content" tabindex="-1">
+      <div class="info" tabindex="0">
+        <div class="profileImage">
+          <img src="images/penguin-banner.png" alt="banner">
+        </div>
+        <div class="nameSection">
+          <img src="images/penguin.png" alt="profile">
+          <div class="username">
+            <div class="profileline1">PenguinRamen</div>
+            <div class="profileline2">@penguinramen</div>
+          </div>
+        </div>
+        <ul class="stats">
+          <li>
+            <div class="statsName">Tweets</div>
+            <div class="statsCount">1279</div>
+          </li>
+          <li>
+            <div class="statsName">Following</div>
+            <div class="statsCount">155</div>
+          </li>
+          <li>
+            <div class="statsName">Followers</div>
+            <div class="statsCount">109</div>
+          </li>
+        </ul>
+      </div>
+      <div class="tweets" role="main" id="tweets">
+        <div class="tweet">
+          <img src="images/penguin.png" alt="profile">
+          <div class="tweetRight">
+            <div class="accountDescription">
+              <div class="texts">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+              </div>
+            </div>
+            <div class="tweetContent" aria-label="tweet content">
+              Content loading...
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="follow">
+        <div class="whoToFollow">Who to follow</div>
+        <div class="account" tabindex="0">
+          <img src="images/penguin.png" alt="profile">
+          <div class="accountDescription">
+            <div class="texts">
+              <div class="line1">Big Penguin</div>
+              <div class="line2">@bigpenguin</div>
+            </div>
+            <div class="followButton">Follow</div>
+          </div>
+        </div>
+        <hr />
+        <div class="account" tabindex="0">
+          <img src="images/penguin.png" alt="profile">
+          <div class="accountDescription">
+            <div class="texts">
+              <div class="line1">Big Penguin</div>
+              <div class="line2">@bigpenguin</div>
+            </div>
+            <div class="followButton">Follow</div>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="index.js"></script>
+  </body>
 </html>
